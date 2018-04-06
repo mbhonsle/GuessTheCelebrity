@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="13sp"
+    tools:context="com.mbhonsle.guessthecelebrity.MainActivity">
+
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="14dp">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="fill"
+            android:layout_row="0"
+            android:layout_rowWeight="8"
+            android:contentDescription="@string/clbImg"
+            android:padding="4sp" />
+
+        <TextView
+            android:id="@+id/option1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:layout_row="1"
+            android:layout_rowWeight="1"
+            android:background="@drawable/back"
+            android:layout_margin="4sp"
+            android:drawableTint="@android:color/darker_gray"
+            android:onClick="play"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/option2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:layout_row="2"
+            android:layout_margin="4sp"
+            android:layout_rowWeight="1"
+            android:onClick="play"
+            android:background="@drawable/back"
+            android:textSize="22sp" />
+
+        <TextView
+            android:id="@+id/option3"
+            android:layout_margin="4sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:layout_row="3"
+            android:layout_rowWeight="1"
+            android:onClick="play"
+            android:background="@drawable/back"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:id="@+id/option4"
+            android:layout_width="wrap_content"
+            android:layout_margin="4sp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:gravity="center"
+            android:layout_row="4"
+            android:layout_rowWeight="1"
+            android:onClick="play"
+            android:background="@drawable/back"
+            android:textSize="22sp" />
+    </GridLayout>
+
+</android.widget.RelativeLayout>
